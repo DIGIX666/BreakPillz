@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BreakPillz</title>
+    <meta charset="utf-8" />
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./assets/css/formulaire.css">
+    <link rel="shortcut icon" href="./assets/img/BreakPillzlogo.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="contact-wrapper">
+      <form class="form-horizontal" method="post" action="contact.php">
+        <h1 class="section-header">Commande</h1>
+       <div class="infos">
+         <input class="name" type="text" placeholder="nom" name="name" required>
+
+         <input class="surname" type="text" placeholder="prénom" name="name" required>
+
+         <input type="email"  placeholder="email@mail.com" name="email" required>
+        
+         <input type="tel"  placeholder="+33" name="phone" required>
+
+         <input class="adress" type="adress" placeholder="Adresse" required>
+
+         <input class="postal" type="codepostal" placeholder="Code postal" required>
+
+         <input type="ville" type="ville" placeholder="Ville" required>
+       </div>
+        <label for="category">Produits</label>
+        <select id="category" name="category">
+          <option value="default">Choisissez votre produits</option>
+          <option value="5%">Comprimé CBD 5% (60 comprimés)</option>
+          <option value="10%">Comprimé CBD 10% (60 comprimés)</option>
+          <option value="20%">Comprimé CBD 20% (60 comprimés)</option>
+          <option value="cannabis%">Comprimé de Cannabis (30 comprimés)</option>
+          <option value="huile">Huile de CBD 5% (10ml)</option>
+          <option value="huile">Huile de CBD 10% (10ml)</option>
+        </select>
+        <input class="quantite" type="number" name="qty" inputmode="numeric" pattern="[0-9]*" value="0" min="0">
+
+        <select id="category" name="category">
+          <option value="default">Choisissez votre produits</option>
+          <option value="5%">Comprimé CBD 5% (60 comprimés)</option>
+          <option value="10%">Comprimé CBD 10% (60 comprimés)</option>
+          <option value="20%">Comprimé CBD 20% (60 comprimés)</option>
+          <option value="cannabis%">Comprimé de Cannabis (30 comprimés)</option>
+          <option value="huile">Huile de CBD 5% (10ml)</option>
+          <option value="huile">Huile de CBD 10% (10ml)</option>
+        </select>
+        <input class="quantite" type="number" name="qty" inputmode="numeric" pattern="[0-9]*" value="0" min="0">
+
+        <select id="category" name="category">
+          <option value="default">Choisissez votre produits</option>
+          <option value="5%">Comprimé CBD 5% (60 comprimés)</option>
+          <option value="10%">Comprimé CBD 10% (60 comprimés)</option>
+          <option value="20%">Comprimé CBD 20% (60 comprimés)</option>
+          <option value="cannabis%">Comprimé de Cannabis (30 comprimés)</option>
+          <option value="huile">Huile de CBD 5% (10ml)</option>
+          <option value="huile">Huile de CBD 10% (10ml)</option>
+        </select>
+        <input class="quantite" type="number" name="qty" inputmode="numeric" pattern="[0-9]*" value="0" min="0">
+
+        <select id="category" name="category">
+          <option value="default">Choisissez votre produits</option>
+          <option value="5%">Comprimé CBD 5% (60 comprimés)</option>
+          <option value="10%">Comprimé CBD 10% (60 comprimés)</option>
+          <option value="20%">Comprimé CBD 20% (60 comprimés)</option>
+          <option value="cannabis%">Comprimé de Cannabis (30 comprimés)</option>
+          <option value="huile">Huile de CBD 5% (10ml)</option>
+          <option value="huile">Huile de CBD 10% (10ml)</option>
+        </select>
+        <input class="quantite" type="number" name="qty" inputmode="numeric" pattern="[0-9]*" value="0" min="0">
+        
+        <label for="message">Infos livraison</label>
+        <textarea rows="5" id="message" name="message" required></textarea>
+
+        <button class="send-button" id="submit" type="submit">Envoyer</button>
+        <button class="send-button" id="reset" type="reset"> Réinitialiser le formulaire</button>
+
+        <div class="advert-wrapper">
+          <p>Souhaitez-vous recevoir nos news ?</p>
+          <input type="radio" id="yes" name="news-question" value="yes" checked>
+          <label for="yes">Oui</label>
+          <input type="radio" id="no" name="news-question" value="no">
+          <label for="no">Non</label>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/parallax.css">
+  <link rel="shortcut icon" href="./assets/img/BreakPillzlogo.png" type="image/x-icon">
+  <title>BreakPillz</title>
+
+</head>
+<body>
+  <header>
+   
+    <ul>
+      <li><a href="./index.html" class="active">Home</a></li>
+    </ul>
+  </header>
+  <section>
+    <img src="./assets/img/stars.png" id="stars">
+    <img src="./assets/img/moon.png" id="moon" class="center">
+    <img src="./assets/img/mountains_behind.png" id="mountains_behind">
+    <h2 id="text">BreakPillz</h2>
+    <a href="#sec" id="btn">Explore</a>
+    <img src="./assets/img/mountains_front.png" id="mountains_front">
+  </section>
+  <div class="sec" id="sec">
+    <h2>Tout savoir sur le CBD</h2>
+    <h3>Qu'est-ce que le CBD ?</h3>
+    <p>Le CBD est une substance active présente dans le cannabis, sans effet psychotrope (contrairement au THC), qui aurait des propriétés relaxantes.
+      <br>En France, la commercialisation des produits à base de CBD (liquide à vapoter, bonbons, etc.) obéit à une réglementation très stricte selon le larousse
+    <br><br></p>
+
+    <h3>L'histoire du CBD</h3>
+    <p>Tout d'abord, il faut savoir que le Cannabis Sativa dont est extrait le CBD est une plante à fleurs pouvant atteindre 2 mètres de hauteur.
+      Cependant, ils sont plus faciles à trouver dans les zones montagneuses et les zones tropicales et humides.
+      L'utilisation du chanvre remonte à des milliers d'années.
+      En fait, des preuves archéologiques suggèrent que la culture du cannabis en Chine remonte à des siècles.
+      Il est également cultivé en Inde depuis des milliers d'années.
+      Il est utilisé dans diverses pratiques spirituelles et rituels.
+      
+    <br><br></p>
+
+      <h3>Qu'est-ce qu'une huile essentielle ?</h3>
+      <p> Une huile essentielle est un produit obtenu à partir d'une matière végétale, soit par entraînement à la vapeur d'eau,
+      soit par des procédés mécaniques à partir de l'épicarpe des citrus, soit par distillation à sec
+      nous dit L'association française de normalisation (AFNOR): tout droit reservé.
+      <br><br>
+      <br><br>
+      <br></p>
+  </div>
+
+
+  <script>
+    let stars = document.getElementById('stars');
+    let moon = document.getElementById('moon');
+    let mountains_behind = document.getElementById('mountains_behind');
+    let text = document.getElementById('text');
+    let btn = document.getElementById('btn');
+    let mountains_front = document.getElementById('mountains_front');
+    let header = document.querySelector('header');
+
+    window.addEventListener('scroll', function(){
+      let value = window.scrollY;
+      stars.style.left = -value * 0.5 + 'px';
+      moon.style.top = value * 1.05 + 'px';
+      mountains_behind.style.top = value * 0.5 + 'px';
+      mountains_front.style.top = value * 0 + 'px';
+      text.style.marginRight = value * 4 + 'px';
+      text.style.marginTop = value * 1.5 + 'px';
+      btn.style.marginTop = value * 1.5 + 'px'; 
+      header.style.top = value * 0.5 + 'px';
+    })
+  </script>
+</body>
+</html>
